@@ -1,8 +1,0 @@
----
-title: "References"
-author: "Don Heartfield"
-date: "9/17/2018"
-output: rmarkdown::github_document
-bibliography: material.bib
-nocite: '@*'
----
