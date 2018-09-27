@@ -1,0 +1,46 @@
+@font-face {
+    font-family: "CourierPrimeRegular";
+    src: url(fonts/CourierPrime.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "CourierPrimeItalic";
+    src: url(fonts/CourierPrimeItalic.ttf) format("truetype");
+}
+
+body {
+    font-size: 24px;
+    color: #000000;
+    margin: 8px;
+    display: block;
+    width: 888px;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #ee0000;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+em {
+  font-family: 'CourierPrimeItalic';
+}
+
+.g {
+  letter-spacing: 0.35em;
+}
+
+pre {
+    font-family: 'CourierPrimeRegular';
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.1;
+    margin: 0 0;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    display: block;
+}
