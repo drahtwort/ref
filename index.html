@@ -34,8 +34,10 @@
       </div>
       <div class="bibtex_structure">
         <div class="group year" extra="ASC number">
+          <div class="sort author" extra="ASC string">
             <div style="padding-bottom:10px;"></div>
             <div class="templates"></div>
+          </div>
         </div>
       </div>
       <div id=bibtex_display>
@@ -44,11 +46,11 @@
             <li>
               <span class="if url">
                 <a class="url">
-                  <span style="text-decoration: underline;" class="title"></span>
+                  <em><span style="text-decoration: underline;" class="title"></span></em>
                 </a>
               </span>
               <span class="if !url">
-                <span class="title"></span>
+                <em><span class="title"></span></em>
               </span>
               <div class="if author">
                 <span class="author"></span>
@@ -57,13 +59,12 @@
                 <span class="if journal"><em><span class="journal"></span></em>,</span>
                 <span class="if booktitle">In <em><span class="booktitle"></span></em>,</span>
                 <span class="if editor"><span class="editor"></span> (ed.),</span>
-                <span class="if publisher"><em><span class="publisher"></span></em>:</span>
-                <span class="if address"><span class="address"></span>,</span>
+                <span class="if address"><span class="address"></span>:</span>
+                <span class="if publisher"><em><span class="publisher"></span></em>,</span>
                 <span class="if volume"> Vol. <span class="volume"></span>,</span>
                 <span class="if journal number"> No. <span class="number"></span>,</span>
-                <span class="if pages"> pp. <span class="pages"></span>,</span>
-                <span class="if month"><span class="month"></span>,</span>
-                <span class="if year"><span class="year"></span>.</span>
+                <span class="if month"><span class="month"></span><span class="if day"> <span class="day"></span></span>,</span>
+                <span class="if year"><span class="year"></span><span class="if pages">, pp. <span class="pages"></span></span>.</span>
               </div>
             <div style="display:none"><span class="bibtextype"></span></div>
           </li>
