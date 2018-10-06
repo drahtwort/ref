@@ -578,6 +578,7 @@ function BibtexDisplay() {
                 var format = tpl.find("span:not(a)." + key.toLowerCase());
                 value = this.displayAuthor(value, format);
             } else if (key == "EDITOR") {
+              // added to handle multiple editors like multiple authors
               var format = tpl.find("span:not(a)." + key.toLowerCase());
               value = this.displayAuthor(value, format);
             } else if (key == "PAGES") {
