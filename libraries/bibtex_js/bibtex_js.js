@@ -479,7 +479,8 @@ function BibtexDisplay() {
                 if (i == 0) {
                     newString += author[0].outerHTML;
                 } else if (i + 1 >= arrayString.length) {
-                    newString += ", and " + author[0].outerHTML;
+                  // modified from : ", and "
+                    newString += " / " + author[0].outerHTML;
                 } else {
                     newString += ", " + author[0].outerHTML;
                 }
@@ -488,7 +489,8 @@ function BibtexDisplay() {
             newString = arrayString[0];
             for (i = 1; i < searchLength; i++) {
                 if (i + 1 >= arrayString.length) {
-                    newString += ", and " + arrayString[i];
+                  // modified from : ", and "
+                    newString += " / " + arrayString[i];
                 } else {
                     newString += ", " + arrayString[i];
                 }
@@ -575,6 +577,9 @@ function BibtexDisplay() {
             if (key == "AUTHOR") {
                 var format = tpl.find("span:not(a)." + key.toLowerCase());
                 value = this.displayAuthor(value, format);
+            } else if (key == "EDITOR") {
+              var format = tpl.find("span:not(a)." + key.toLowerCase());
+              value = this.displayAuthor(value, format);
             } else if (key == "PAGES") {
                 value = value.replace("--", "-");
             } else if (key == "DATE") {
