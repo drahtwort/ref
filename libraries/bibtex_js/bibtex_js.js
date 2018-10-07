@@ -492,7 +492,8 @@ function BibtexDisplay() {
                   // modified from : ", and "
                     newString += " / " + arrayString[i];
                 } else {
-                    newString += ", " + arrayString[i];
+                  // modified from : ", "
+                    newString += " / " + arrayString[i];
                 }
             }
         }
