@@ -1,18 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <meta charset="UTF-8">
-        <title>Drahtwort: References</title>
-        <meta name="description" content="Bibliographic Data of Drahtwort’s Collection">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+      <meta http-equiv="cache-control" content="no-cache" />
+      <title>Drahtwort: References</title>
+      <meta name="description" content="Bibliography">
+      <script src="./vendor/jquery_js/jquery.min.js"></script>
+      <script src="./vendor/bibtex_js/bibtex_js.js" type="text/javascript" charset="utf-8"></script>
+      <style>
+        html,body,span,h1 {
+          font-family: "Times New Roman", Times, serif;
+          font-size: 17px;
+        }
+        bibtex { display: none; }
+        .searchbar { margin-left:0px;}
+        #bibtex_errors { margin-top:10px; color: red;}
+        h1.header {margin-left:8px;}
+        h1.YEAR { font-size: 17px; font-weight: bold; display: inline; margin-left:8px;}
+      </style>
+      <bibtex src="./data/pub.bib"></bibtex>
+      <link rel="stylesheet" href="./vendor/bootstrap_css/bootstrap.min.css">
     </head>
     <body>
-      <pre>DRAHTWORT
-
-References:
-  <a href="./draft">Draft</a>
-  <a href="./material">Material</a>
-
-      </pre>
+      <pre>DRAHTWORT: References</pre>
+      <div class="container-fluid">
+        <div class="searchbar">
+          <div style="float:left;">
+            <input type="text" class="bibtex_search form-control" id="searchbar" placeholder="Search">
+            <span class="help-block"></span>
+          </div>
+        </div>
+      </div>
+      <div class="bibtex_structure">
+        <div class="group year" extra="ASC number">
+          <div class="sort author" extra="ASC string">
+            <div style="padding-bottom:10px;"></div>
+            <div class="templates"></div>
+          </div>
+        </div>
+      </div>
+      <div id=bibtex_display>
+        <div class="if bibtex_template" style="display: none;">
+          <ul>
+            <li>
+              <span class="if url">
+                <a class="url">
+                  <em><span style="text-decoration: underline;" class="title"></span></em>
+                </a>
+              </span>
+              <span class="if !url">
+                <em><span class="title"></span></em>
+              </span>
+              <div class="if author">
+                <span class="author"></span>
+              </div>
+              <div>
+                <span class="if journal"><em><span class="journal"></span></em>,</span>
+                <span class="if booktitle">In <em><span class="booktitle"></span></em>,</span>
+                <span class="if editor"><span class="editor"></span> (ed.),</span>
+                <span class="if address"><span class="address"></span>:</span>
+                <span class="if publisher"><em><span class="publisher"></span></em>,</span>
+                <span class="if volume"> Vol. <span class="volume"></span>,</span>
+                <span class="if journal number"> No. <span class="number"></span>,</span>
+                <span class="if month"><span class="month"></span><span class="if day"> <span class="day"></span></span>,</span>
+                <span class="if year"><span class="year"></span><span class="if pages">, pp. <span class="pages"></span></span>.</span>
+              </div>
+            <div style="display:none"><span class="bibtextype"></span></div>
+          </li>
+        </ul>
+      </div>
+      </div>
+      <script src="./vendor/bootstrap_js/bootstrap.min.js"></script>
     </body>
 </html>
