@@ -5,19 +5,19 @@ bibliographic data in bibtex format
 
 ## Editions
 
-see [here](https://github.com/drahtwort/ref/blob/master/data/eds.bib)
+see [data/eds.bib](https://github.com/drahtwort/ref/blob/master/data/eds.bib)
 
 
 ## Quotes
 
-see [here](https://github.com/drahtwort/ref/blob/master/data/qts.bib)
+see [data/qts.bib](https://github.com/drahtwort/ref/blob/master/data/qts.bib)
 
 
 ## Miscellaneous
 
-see [here](https://github.com/drahtwort/ref/blob/master/data/pub.bib)
+see [data/pub.bib](https://github.com/drahtwort/ref/blob/master/data/pub.bib)
 
 
 ## Illustrations
 
-see [here](https://github.com/drahtwort/ref/blob/master/data/ill.bib)
+see [data/ill.bib](https://github.com/drahtwort/ref/blob/master/data/ill.bib)
