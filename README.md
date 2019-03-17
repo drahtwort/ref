@@ -10,12 +10,12 @@ see [data/eds.bib](https://github.com/drahtwort/ref/blob/master/data/eds.bib)
 
 ## Quotes
 
-see [data/qts.bib](https://github.com/drahtwort/ref/blob/master/data/qts.bib)
+see [data/cit.bib](https://github.com/drahtwort/ref/blob/master/data/cit.bib)
 
 
 ## Miscellaneous
 
-see [data/pub.bib](https://github.com/drahtwort/ref/blob/master/data/pub.bib)
+see [data/misc.bib](https://github.com/drahtwort/ref/blob/master/data/misc.bib)
 
 
 ## Illustrations
